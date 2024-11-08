@@ -15,6 +15,15 @@ design:
 
 content:
   slides:
+    - title: Global Village - Embrace Diversity
+      content: ''
+      align: center
+      background:
+        position: center
+        color: '#555'
+        brightness: 0.7
+        media: slider-globalVillage.jpg
+        fit: cover
     - title: Health pack issue
       content: With Zhao Qinghua, Consul General of the Consulate General
       align: center

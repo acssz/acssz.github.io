@@ -15,6 +15,18 @@ design:
 
 content:
   slides:
+    - title: 地球村 - 拥抱多样性
+      content: ''
+      align: right
+      background:
+        position: center
+        color: '#333'
+        brightness: 0.7
+        media: slider-globalVillage.jpg
+        fit: cover
+      link:
+        text: 了解更多
+        url: ../event/2024/
     - title: 瑞士中国学生迎新春运动会
       content: ''
       align: center
