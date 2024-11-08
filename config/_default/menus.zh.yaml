@@ -48,26 +48,30 @@ main:
     identifier: event
     url: event
     weight: 20
+  - name: 2024
+    parent: event
+    url: event/2024/
+    weight: 21
   - name: 2022
     parent: event
     url: event/2022/
-    weight: 21
+    weight: 22
   - name: 2021
     parent: event
     url: event/2021/
-    weight: 22
+    weight: 23
   - name: 2020
     parent: event
     url: event/2020/
-    weight: 23
+    weight: 24
   - name: 2019
     parent: event
     url: event/2019/
-    weight: 24
+    weight: 25
   - name: 2018
     parent: event
     url: event/2018/
-    weight: 25
+    weight: 26
   - name: 伙伴
     identifier: partner
     url: partner
