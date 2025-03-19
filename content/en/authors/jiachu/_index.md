@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Yuhang Chen
+title: Chu Jia
 
 # Username (this should match the folder name)
 authors:
-  - chenyuhang
+  - jiachu
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Enterprise Department
+role: Department of Sport and Recreation
 
 # email: duchaoyudinah@gmail.com
 
@@ -18,6 +18,7 @@ role: Enterprise Department
 #   - icon: envelope
 #     icon_pack: fas
 #     link: 'mailto:duchaoyudinah@gmail.com'
+
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
