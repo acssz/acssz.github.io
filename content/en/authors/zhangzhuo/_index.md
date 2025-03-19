@@ -1,23 +1,23 @@
 ---
 # Display name
-title: Kun Zhang
+title: Zhuo Zhang
 
 # Username (this should match the folder name)
 authors:
-  - zhangkun
+  - Zhangzhuo
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Propaganda Department
+role: IT Department
 
-email: kun.zhang@uzh.ch
+# email: duchaoyudinah@gmail.com
 
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:kun.zhang@uzh.ch'
+# social:
+#   - icon: envelope
+#     icon_pack: fas
+#     link: 'mailto:duchaoyudinah@gmail.com'
 
 
 # Organizational groups that you belong to (for People widget)

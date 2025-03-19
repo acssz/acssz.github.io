@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Chairman
+role: Public Relations Department
 
 email: qd9315@gmail.com
 
@@ -23,5 +23,5 @@ social:
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Presidium
+  - Consultant
 ---

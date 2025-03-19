@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Chenyu Yang
+title: Sice Huang
 
 # Username (this should match the folder name)
 authors:
-  - yangchenyu
+  - huangsice
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Secreariat Department
+role: Propaganda Department
 
 # email: duchaoyudinah@gmail.com
 

@@ -10,7 +10,8 @@ authors:
 superuser: false
 
 # Role/position
-role: Department of Sport and Recreation
+role: Vice-Chairman
+
 
 # email: duchaoyudinah@gmail.com
 
@@ -23,5 +24,5 @@ role: Department of Sport and Recreation
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Executive Committee
+  - Presidium
 ---
