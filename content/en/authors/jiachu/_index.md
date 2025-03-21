@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Department of Sport and Recreation
+role: Head of Dept. of Activities
 
 # email: duchaoyudinah@gmail.com
 

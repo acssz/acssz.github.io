@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: IT Department
+role: Head of Dept. of IT
 
 email: karl.liu.1024@gmail.com
 

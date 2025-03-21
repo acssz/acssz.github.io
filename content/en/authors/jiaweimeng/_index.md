@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Public Relations Department
+role: Deputy Head of Dept. of Public Relations
 
 # email: nouvaxs@gmail.com
 # 

@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Public Relations Department
+role: Head of Dept. of Public Relations
 
 # email: duchaoyudinah@gmail.com
 

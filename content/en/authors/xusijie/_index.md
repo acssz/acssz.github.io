@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Vice-Chairman
+role: Vice President
 
 
 # email: duchaoyudinah@gmail.com

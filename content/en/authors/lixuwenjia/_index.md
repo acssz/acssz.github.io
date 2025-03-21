@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Enterprise Department
+role: Dept. of Enterprise
 
 email: xuwli@student.ethz.ch
 

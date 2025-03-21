@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Secretary General
+role: Secretary-General
 
 # email: duchaoyudinah@gmail.com
 

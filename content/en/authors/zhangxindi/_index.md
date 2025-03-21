@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Propaganda Department
+role: Head of Dept. of Publicity
 
 # email: kun.zhang@uzh.ch
 # 

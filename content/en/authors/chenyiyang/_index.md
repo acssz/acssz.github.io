@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Secreariat Department
+role: Deputy Head of Secretariat
 
 # email: duchaoyudinah@gmail.com
 
