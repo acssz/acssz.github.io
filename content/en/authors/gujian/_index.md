@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: IT Department
+role: Dept. of IT
 
 email: nouvaxs@gmail.com
 

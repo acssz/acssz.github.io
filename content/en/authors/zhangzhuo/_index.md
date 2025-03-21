@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: IT Department
+role: Deputy Head of Dept. of IT
 
 # email: duchaoyudinah@gmail.com
 

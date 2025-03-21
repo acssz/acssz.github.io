@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Chairman
+role: President
 
 # email: duchaoyudinah@gmail.com
 

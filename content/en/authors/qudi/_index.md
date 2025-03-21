@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Public Relations Department
+role: Dept. of Public Relations
 
 email: qd9315@gmail.com
 
