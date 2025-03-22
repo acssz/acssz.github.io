@@ -12,12 +12,12 @@ superuser: false
 # Role/position
 role: Accountant
 
-email: linqixu@ethz.ch
+# email: linqixu@ethz.ch
 
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:linqixu@ethz.ch'
+# social:
+#   - icon: envelope
+#     icon_pack: fas
+#     link: 'mailto:linqixu@ethz.ch'
 
 
 # Organizational groups that you belong to (for People widget)
