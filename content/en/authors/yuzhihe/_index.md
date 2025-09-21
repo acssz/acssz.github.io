@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Treasurer
+role: Head of Dept. of Public Relations
 
 # email: duchaoyudinah@gmail.com
 
@@ -22,6 +22,6 @@ role: Treasurer
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-# user_groups:
-#   - Presidium
+user_groups:
+  - Executive Committee
 ---
