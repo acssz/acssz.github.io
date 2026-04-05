@@ -31,7 +31,7 @@ export default function Footer() {
 			<Grid container spacing={2} direction="column" sx={{ alignSelf: "center" }}>
 				<img src="media/QRcode.jpg" style={{ width: "50%", alignSelf: "center" }} />
 				<Stack direction="row" spacing={1} useFlexGap sx={{ justifyContent: "center", color: "text.secondary" }}>
-					<IconButton color="inherit" size="small" href="xuelian@acssz.org" aria-label="Email" sx={{ alignSelf: "center" }}>
+					<IconButton color="inherit" size="small" href="mailto:xuelian@acssz.org" aria-label="Email" sx={{ alignSelf: "center" }}>
 						<EmailIcon />
 					</IconButton>
 					<IconButton color="inherit" size="small" href="https://www.facebook.com/groups/174462206028150/" aria-label="FacebookIcon" sx={{ alignSelf: "center" }}>
