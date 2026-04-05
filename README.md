@@ -38,7 +38,7 @@ The main page is composed of sections stacked vertically in this order:
 | Contact Us | `#footer` | Email, WeChat, social links |
 | Copyright | — | CC BY-NC-ND 4.0 |
 
-See [`docs/page-structure.drawio`](docs/page-structure.drawio) for a visual diagram of sections, navigation links, and external URLs. Open with [draw.io](https://app.diagrams.net/).
+See [`docs/page-structure.drawio`](docs/page-structure.svg) for a visual diagram of sections, navigation links, and external URLs. Open with [draw.io](https://app.diagrams.net/).
 
 ## License
 
