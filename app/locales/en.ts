@@ -132,6 +132,19 @@ export const en: Locale = {
       },
     ],
   },
+  about: {
+    title: "About Us",
+    paragraphs: [
+      "The Association of Chinese Students and Scholars in Zurich (ACSSZ) was established in the mid-1980s. The association represents the interests and concerns of all Chinese students and scholars in Zurich. As of early 2023, there are more than 2,000 Chinese students in Zurich. Last year, approximately 400 new students arrived in Zurich, and this number continues to grow year by year.",
+      "Currently (2023), ACSSZ has 60 staff members distributed across the Publicity Department, Activities Department, Enterprise Department, Public Relations Department, Information Department, as well as the Secretariat and the Presidium, driving the continuous operation of the association.",
+      "We work and serve our fellow students in four key areas — student welfare, cultural exchange, extracurricular activities, and academic exchange — with a sense of responsibility and mission.",
+      "In terms of welfare, we provide Chinese students with the \"Freshmen Handbook,\" which offers a comprehensive guide from China to Switzerland. Before the start of each autumn semester, we organize a \"Welcome Ceremony\" for all new students, with more than 300 participants. In our daily work, we also secure and provide various benefits such as Swisscare insurance discounts, Sunrise YOL SIM card at the lowest price, and more.",
+      "In terms of culture, over the past two years we have organized large-scale events such as \"China Garden\" and \"China Day,\" welcoming everyone regardless of language or nationality. These cultural events offer opportunities for people to enjoy Chinese culture and cuisine.",
+      "In terms of activities, we organize events every year such as the \"Spring Festival Sports Day,\" \"Lantern Festival Tea Party,\" and \"Singer Competition.\" These events are open to all students, and international students are also welcome to join.",
+      "In terms of academics, our partner \"Zurich Chinese Science Club\" organizes monthly lectures to share knowledge and research progress from various fields.",
+    ],
+    imagePlaceholder: "Add your image here",
+  },
   logoCollection: {
     title: "Our cooperation partners",
   },

@@ -51,6 +51,11 @@ export interface Locale {
     title: string;
     items: FaqItem[];
   };
+  about: {
+    title: string;
+    paragraphs: string[];
+    imagePlaceholder: string;
+  };
   logoCollection: {
     title: string;
   };

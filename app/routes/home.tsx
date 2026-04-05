@@ -8,6 +8,7 @@ import Departments from "../components/Departments";
 import Manual from "../components/Manual";
 import Events from "../components/Events";
 import FAQ from "../components/FAQ";
+import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import { LocaleProvider } from "../context/LocaleContext.tsx";
 import "../css/base.css";
@@ -43,6 +44,9 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 					</section>
 					<section id="faq">
 						<FAQ />
+					</section>
+					<section id="about">
+						<AboutUs />
 					</section>
 					<section id="sponsors">
 						<LogoCollection />

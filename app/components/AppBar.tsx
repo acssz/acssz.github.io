@@ -81,18 +81,12 @@ export default function AppAppBar() {
 							<Button component="a" href="#departments" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
 								{nav.departments}
 							</Button>
-							<Button component="a" href="#footer" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
+							<Button component="a" href="#about" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
 								{nav.aboutUs}
 							</Button>
 						</Box>
 					</Box>
-					<Box
-						sx={{
-							display: { xs: "none", md: "flex" },
-							gap: 1,
-							alignItems: "center",
-						}}
-					>
+					<Box sx={{ display: { xs: "none", md: "flex" }, gap: 1, alignItems: "center" }}>
 						<Button onClick={toggleLanguage} color="info" variant="text" size="small">
 							{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
 						</Button>
@@ -110,19 +104,14 @@ export default function AppAppBar() {
 							anchor="top"
 							open={open}
 							onClose={toggleDrawer(false)}
-							PaperProps={{
-								sx: {
-									top: "var(--template-frame-height, 0px)",
+							slotProps={{
+								paper: {
+									sx: { top: "var(--template-frame-height, 0px)" },
 								},
 							}}
 						>
 							<Box sx={{ p: 2, backgroundColor: "background.default" }}>
-								<Box
-									sx={{
-										display: "flex",
-										justifyContent: "flex-end",
-									}}
-								>
+								<Box sx={{ display: "flex", justifyContent: "flex-end" }}>
 									<IconButton onClick={toggleDrawer(false)}>
 										<CloseRoundedIcon />
 									</IconButton>
@@ -134,7 +123,7 @@ export default function AppAppBar() {
 								<MenuItem>{nav.eventReview}</MenuItem>
 								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>{nav.businessCooperation}</MenuItem>
 								<MenuItem component="a" href={MEMBERSHIP_CARD_URL} target="_blank" rel="noopener noreferrer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.membershipCard}</MenuItem>
-								<MenuItem component="a" href="#footer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.aboutUs}</MenuItem>
+								<MenuItem component="a" href="#about" sx={{ textDecoration: "none", color: "inherit" }}>{nav.aboutUs}</MenuItem>
 								<Divider sx={{ my: 3 }} />
 								<MenuItem>
 									<Button onClick={toggleLanguage} color="info" variant="outlined" fullWidth>
