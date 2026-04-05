@@ -3,58 +3,42 @@ import Card from "@mui/material/Card";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { useLocale } from "../context/LocaleContext.tsx";
+import { sectionContainerSx, sectionHeaderBoxSx, sectionTitleSx, sectionBodySx } from "../styles/section.ts";
 
 export default function Manual() {
 	const { locale } = useLocale();
 	const { title, subtitle } = locale.manual;
 
 	return (
-		<Container
-			id="Manual"
-			sx={{
-				py: { xs: 6, sm: 10 },
-				position: "relative",
-				display: "flex",
-				flexDirection: "column",
-				alignItems: "center",
-				gap: { xs: 3, sm: 6 },
-			}}
-		>
-			<Box
-				sx={{
-					width: { sm: "100%", md: "60%" },
-					textAlign: { sm: "left", md: "center" },
-				}}
-			>
-				<Typography component="h2" variant="h4" gutterBottom sx={{ color: "text.primary" }}>
+		<Container id="Manual" sx={sectionContainerSx}>
+			<Box sx={sectionHeaderBoxSx}>
+				<Typography component="h2" variant="h4" gutterBottom sx={sectionTitleSx}>
 					{title}
 				</Typography>
-				<Typography variant="body1" sx={{ color: "text.secondary" }}>
+				<Typography variant="body1" sx={sectionBodySx}>
 					{subtitle}
 				</Typography>
 			</Box>
-
 			<Card
 				sx={[
 					{
 						display: "flex",
 						flexDirection: "column",
 						alignItems: "center",
-						width: { sm: "100%", md: "100%" },
-						pd: { xs: 0, sm: 0 },
+						width: "100%",
 					},
 					(theme) => ({
 						border: "none",
 						background: "radial-gradient(circle at 50% 0%, hsl(220, 20%, 20%), hsl(220, 30%, 16%))",
-						boxShadow: `0 8px 12px hsla(0, 0%, 0%, 0.8)`,
+						boxShadow: "0 8px 12px hsla(0, 0%, 0%, 0.8)",
 						...theme.applyStyles("dark", {
 							background: "radial-gradient(circle at 50% 0%, hsl(220, 20%, 35%), hsl(220, 30%, 6%))",
-							boxShadow: `0 8px 12px hsla(220, 20%, 42%, 0.2)`,
+							boxShadow: "0 8px 12px hsla(220, 20%, 42%, 0.2)",
 						}),
 					}),
 				]}
 			>
-				<iframe src="https://guide.acssz.org/share/glk90p035i/p/-V0cAxSyr6p" width={"100%"} height={"600px"} />
+				<iframe src="https://guide.acssz.org/share/glk90p035i/p/-V0cAxSyr6p" width="100%" height="600px" />
 			</Card>
 		</Container>
 	);

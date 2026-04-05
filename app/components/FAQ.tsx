@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useLocale } from "../context/LocaleContext.tsx";
+import { sectionContainerSx, sectionTitleSx, sectionHeaderBoxSx } from "../styles/section.ts";
 
 export default function FAQ() {
 	const [expanded, setExpanded] = useState<string[]>([]);
@@ -19,26 +20,8 @@ export default function FAQ() {
 		};
 
 	return (
-		<Container
-			id="faq"
-			sx={{
-				py: { xs: 6, sm: 10 },
-				position: "relative",
-				display: "flex",
-				flexDirection: "column",
-				alignItems: "center",
-				gap: { xs: 3, sm: 6 },
-			}}
-		>
-			<Typography
-				component="h2"
-				variant="h4"
-				sx={{
-					color: "text.primary",
-					width: { sm: "100%", md: "60%" },
-					textAlign: { sm: "left", md: "center" },
-				}}
-			>
+		<Container id="faq" sx={sectionContainerSx}>
+			<Typography component="h2" variant="h4" sx={{ ...sectionTitleSx, ...sectionHeaderBoxSx }}>
 				{title}
 			</Typography>
 			<Box sx={{ width: "100%" }}>
