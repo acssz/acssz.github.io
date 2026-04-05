@@ -151,7 +151,7 @@ export const en: Locale = {
 				name: "Secretariat",
 				members: [
 					{ role: "Director", names: ["GAO Xing"] },
-					{ role: "Deputy Director", names: ["Vacant"] },
+					{ role: "Deputy Director", names: ["(Vacant)"] },
 				],
 			},
 			{
