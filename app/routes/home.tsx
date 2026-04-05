@@ -2,7 +2,7 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import AppTheme from "../shared-theme/AppTheme.tsx";
-import AppAppBar from "../components/AppAppBar";
+import AppAppBar from "../components/AppBar.tsx";
 import Hero from "../components/Hero";
 import LogoCollection from "../components/LogoCollection";
 import Departments from "../components/Departments";
@@ -31,13 +31,25 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 			<AppAppBar />
 			<Hero />
 			<div>
-				<Events />
-				<Departments />
-				<Manual />
-				<FAQ />
-				<LogoCollection />
+				<section id="events">
+					<Events />
+				</section>
+				<section id="departments">
+					<Departments />
+				</section>
+				<section id="information">
+					<Manual />
+				</section>
+				<section id="faq">
+					<FAQ />
+				</section>
+				<section id="sponsors">
+					<LogoCollection />
+				</section>
 				<Divider />
-				<Footer />
+				<footer id="footer">
+					<Footer />
+				</footer>
 			</div>
 		</AppTheme>
 	);

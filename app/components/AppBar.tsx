@@ -11,8 +11,9 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
-import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown";
+import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.tsx";
 import Icon from "./Icon.tsx";
+import { ADMIN_LOGIN_URL } from "../config.ts";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 	display: "flex",
@@ -53,22 +54,22 @@ export default function AppAppBar() {
 					<Box sx={{ flexGrow: 1, display: "flex", alignItems: "center", px: 0 }}>
 						<Icon />
 						<Box sx={{ display: { xs: "none", md: "flex" } }}>
-							<Button variant="text" color="info" size="small">
+							<Button component="a" href="#information" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
 								Useful Information
 							</Button>
-							<Button variant="text" color="info" size="small">
+							<Button component="a" href="#events" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
 								Event Notification
 							</Button>
-							<Button variant="text" color="info" size="small">
+							<Button component="a" href="#sponsors" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
 								Business Cooperation
 							</Button>
 							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
 								Membership Card
 							</Button>
-							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+							<Button component="a" href="#departments" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
 								Departments
 							</Button>
-							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+							<Button component="a" href="#footer" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
 								About Us
 							</Button>
 						</Box>
@@ -80,8 +81,8 @@ export default function AppAppBar() {
 							alignItems: "center",
 						}}
 					>
-						<Button color="primary" variant="text" size="small">
-							Member Login
+						<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
+							Admin Login
 						</Button>
 						<ColorModeIconDropdown />
 					</Box>
@@ -112,16 +113,16 @@ export default function AppAppBar() {
 									</IconButton>
 								</Box>
 
-								<MenuItem>Useful Information</MenuItem>
+								<MenuItem component="a" href="#information" sx={{ textDecoration: "none", color: "inherit" }}>Useful Information</MenuItem>
 								<MenuItem>Q&A for Freshmen</MenuItem>
-								<MenuItem>Event Notification</MenuItem>
+								<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>Event Notification</MenuItem>
 								<MenuItem>Event Review</MenuItem>
-								<MenuItem>Business Cooperation</MenuItem>
+								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>Business Cooperation</MenuItem>
 								<MenuItem>Membership Card</MenuItem>
-								<MenuItem>About Us</MenuItem>
+								<MenuItem component="a" href="#footer" sx={{ textDecoration: "none", color: "inherit" }}>About Us</MenuItem>
 								<Divider sx={{ my: 3 }} />
 								<MenuItem>
-									<Button color="primary" variant="contained" fullWidth>
+									<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="contained" fullWidth sx={{ textDecoration: "none" }}>
 										Admin Login
 									</Button>
 								</MenuItem>
