@@ -1,41 +1,46 @@
-# Material UI - React Router example in TypeScript
+# ACSSZ Website
 
-## How to use
+Static website for the **Association of Chinese Students and Scholars in Zurich (ACSSZ / 苏黎世中国学生学者联合会)**.
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Tech Stack
 
-<!-- #target-branch-reference -->
+| Layer | Technology |
+|---|---|
+| Framework | [React Router v7](https://reactrouter.com/) (SSR/SSG mode) |
+| UI Library | [MUI v7](https://mui.com/) (Material UI) + Emotion CSS-in-JS |
+| Language | TypeScript |
+| Bundler | Vite |
+| Carousel | [Embla Carousel](https://www.embla-carousel.com/) |
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/acssz-static
-cd acssz-static
-```
-
-Install it and run:
+## Getting Started
 
 ```bash
 npm install
-npm run dev
+npm run dev        # development server
+npm run build      # production build
+npm run typecheck  # type check
 ```
 
-or:
+## Page Structure
+[View page structure diagram](docs/page-structure.drawio)
 
-<!-- #target-branch-reference -->
+The main page is composed of sections stacked vertically in this order:
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/master/examples/acssz-static)
+| Section | Anchor | Description |
+|---|---|---|
+| AppBar | — | Sticky nav with language & theme toggles |
+| Hero | — | Auto-scrolling carousel |
+| Events | `#events` | Event cards |
+| Our Cooperation Partners | `#sponsors` | Partner logo pills |
+| Departments | `#departments` | Department description cards |
+| Useful Information | `#information` | Freshmen handbook (external iframe) |
+| FAQ | `#faq` | Accordion Q&A |
+| About Us | `#about` | Text, team table, and photo |
+| Contact Us | `#footer` | Email, WeChat, social links |
+| Copyright | — | CC BY-NC-ND 4.0 |
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/acssz-static)
+See [`docs/page-structure.drawio`](docs/page-structure.drawio) for a visual diagram of sections, navigation links, and external URLs. Open with [draw.io](https://app.diagrams.net/).
 
-## The idea behind the example
+## License
 
-<!-- #host-reference -->
-
-This example demonstrates how you can use Material UI with [React Router](https://reactrouter.com/) in [TypeScript](https://github.com/Microsoft/TypeScript).
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI.
-
-## What's next?
-
-<!-- #host-reference -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+Content is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).

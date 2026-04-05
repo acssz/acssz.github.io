@@ -167,7 +167,7 @@ export const en: Locale = {
 				members: [
 					{ role: "Director", names: ["ZHANG Dingyuan"] },
 					{ role: "Deputy Director", names: ["CHEN Yuyang"] },
-					{ role: "Advisor", names: ["LI Xuwenjia"] },
+					{ role: "Advisor", names: ["LIXU wenjia"] },
 				],
 			},
 			{
