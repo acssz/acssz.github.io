@@ -22,7 +22,6 @@ npm run typecheck  # type check
 ```
 
 ## Page Structure
-[View page structure diagram](docs/page-structure.drawio)
 
 The main page is composed of sections stacked vertically in this order:
 
