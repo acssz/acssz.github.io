@@ -150,7 +150,7 @@ export const zh: Locale = {
 				name: "秘书处",
 				members: [
 					{ role: "部长", names: ["高兴"] },
-					{ role: "副部长", names: ["空缺"] },
+					{ role: "副部长", names: ["(空缺)"] },
 				],
 			},
 			{
