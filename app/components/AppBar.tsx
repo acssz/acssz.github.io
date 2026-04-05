@@ -13,7 +13,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.tsx";
 import Icon from "./Icon.tsx";
-import { ADMIN_LOGIN_URL } from "../config.ts";
+import ExternalLinkButton from "./ExternalLinkButton.tsx";
+import { ADMIN_LOGIN_URL, MEMBERSHIP_CARD_URL } from "../config.ts";
 import { useLocale } from "../context/LocaleContext.tsx";
 import type { LocaleKey } from "../locales/index.ts";
 
@@ -74,9 +75,9 @@ export default function AppAppBar() {
 							<Button component="a" href="#sponsors" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
 								{nav.businessCooperation}
 							</Button>
-							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+							<ExternalLinkButton href={MEMBERSHIP_CARD_URL} variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
 								{nav.membershipCard}
-							</Button>
+							</ExternalLinkButton>
 							<Button component="a" href="#departments" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
 								{nav.departments}
 							</Button>
@@ -95,9 +96,9 @@ export default function AppAppBar() {
 						<Button onClick={toggleLanguage} color="info" variant="text" size="small">
 							{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
 						</Button>
-						<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
+						<ExternalLinkButton href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
 							{nav.adminLogin}
-						</Button>
+						</ExternalLinkButton>
 						<ColorModeIconDropdown />
 					</Box>
 					<Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
@@ -132,7 +133,7 @@ export default function AppAppBar() {
 								<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>{nav.eventNotification}</MenuItem>
 								<MenuItem>{nav.eventReview}</MenuItem>
 								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>{nav.businessCooperation}</MenuItem>
-								<MenuItem>{nav.membershipCard}</MenuItem>
+								<MenuItem component="a" href={MEMBERSHIP_CARD_URL} target="_blank" rel="noopener noreferrer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.membershipCard}</MenuItem>
 								<MenuItem component="a" href="#footer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.aboutUs}</MenuItem>
 								<Divider sx={{ my: 3 }} />
 								<MenuItem>
@@ -141,9 +142,9 @@ export default function AppAppBar() {
 									</Button>
 								</MenuItem>
 								<MenuItem>
-									<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="contained" fullWidth sx={{ textDecoration: "none" }}>
+									<ExternalLinkButton href={ADMIN_LOGIN_URL} color="primary" variant="contained" fullWidth>
 										{nav.adminLogin}
-									</Button>
+									</ExternalLinkButton>
 								</MenuItem>
 							</Box>
 						</Drawer>
