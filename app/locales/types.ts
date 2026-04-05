@@ -14,6 +14,16 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface TeamRole {
+  role: string;
+  names: string[];
+}
+
+export interface TeamDepartment {
+  name: string;
+  members: TeamRole[];
+}
+
 export interface Locale {
   meta: {
     title: string;
@@ -55,6 +65,7 @@ export interface Locale {
     title: string;
     paragraphs: string[];
     imagePlaceholder: string;
+    team: TeamDepartment[];
   };
   logoCollection: {
     title: string;

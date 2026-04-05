@@ -136,6 +136,65 @@ export const en: Locale = {
 			'In terms of academics, our partner "Zurich Chinese Science Club" organizes monthly lectures to share knowledge and research progress from various fields.',
 		],
 		imagePlaceholder: "Add your image here",
+		team: [
+			{
+				name: "Presidium",
+				members: [
+					{ role: "President", names: ["HOU Jiale"] },
+					{ role: "Vice President", names: ["XU Sijie", "YU Zhihe"] },
+					{ role: "Secretary General", names: ["ZHAO Yifei"] },
+					{ role: "Finance", names: ["SUN Xue"] },
+					{ role: "Treasurer", names: ["CHEN Yiyang"] },
+				],
+			},
+			{
+				name: "Secretariat",
+				members: [
+					{ role: "Director", names: ["GAO Xing"] },
+					{ role: "Deputy Director", names: ["Vacant"] },
+				],
+			},
+			{
+				name: "Public Relations",
+				members: [
+					{ role: "Director", names: ["JIA Weimeng"] },
+					{ role: "Deputy Director", names: ["LIU Qiao"] },
+					{ role: "Advisor", names: ["QU Di"] },
+				],
+			},
+			{
+				name: "Enterprise",
+				members: [
+					{ role: "Director", names: ["ZHANG Dingyuan"] },
+					{ role: "Deputy Director", names: ["CHEN Yuyang"] },
+					{ role: "Advisor", names: ["LI Xuwenjia"] },
+				],
+			},
+			{
+				name: "Culture & Sports",
+				members: [
+					{ role: "Director", names: ["JIA Chu"] },
+					{ role: "Deputy Director", names: ["LIU Runpu"] },
+					{ role: "Advisor", names: ["XU Yizhen", "JIANG Wenyi"] },
+				],
+			},
+			{
+				name: "Publicity",
+				members: [
+					{ role: "Director", names: ["ZHANG Xindi"] },
+					{ role: "Deputy Director", names: ["HUANG Sice"] },
+					{ role: "Advisor", names: ["JIANG Anyu"] },
+				],
+			},
+			{
+				name: "IT",
+				members: [
+					{ role: "Director", names: ["LIU Zisen"] },
+					{ role: "Deputy Director", names: ["SHANG Haoliang"] },
+					{ role: "Advisor", names: ["ZHANG Zhuo", "GU Jian"] },
+				],
+			},
+		],
 	},
 	logoCollection: {
 		title: "Our Cooperation Partners",

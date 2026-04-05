@@ -135,6 +135,65 @@ export const zh: Locale = {
 			"在学术方面，我们的合作伙伴\u201c苏黎世中国科学俱乐部\u201d每月都会组织讲座，分享不同领域的知识和研究进展。",
 		],
 		imagePlaceholder: "在此处添加图片",
+		team: [
+			{
+				name: "主席团",
+				members: [
+					{ role: "主席", names: ["侯佳乐"] },
+					{ role: "副主席", names: ["徐思婕", "于之赫"] },
+					{ role: "秘书长", names: ["赵逸飞"] },
+					{ role: "财务", names: ["孙雪"] },
+					{ role: "司库", names: ["陈弋洋"] },
+				],
+			},
+			{
+				name: "秘书处",
+				members: [
+					{ role: "部长", names: ["高兴"] },
+					{ role: "副部长", names: ["空缺"] },
+				],
+			},
+			{
+				name: "公关部",
+				members: [
+					{ role: "部长", names: ["贾维盟"] },
+					{ role: "副部长", names: ["刘峤"] },
+					{ role: "顾问", names: ["曲笛"] },
+				],
+			},
+			{
+				name: "企业部",
+				members: [
+					{ role: "部长", names: ["张丁元"] },
+					{ role: "副部长", names: ["陈钰阳"] },
+					{ role: "顾问", names: ["李许雯佳"] },
+				],
+			},
+			{
+				name: "文体部",
+				members: [
+					{ role: "部长", names: ["贾楚"] },
+					{ role: "副部长", names: ["刘润璞"] },
+					{ role: "顾问", names: ["徐毅蓁", "蒋文一"] },
+				],
+			},
+			{
+				name: "宣传部",
+				members: [
+					{ role: "部长", names: ["张心笛"] },
+					{ role: "副部长", names: ["黄思策"] },
+					{ role: "顾问", names: ["姜安雨"] },
+				],
+			},
+			{
+				name: "信息部",
+				members: [
+					{ role: "部长", names: ["刘子森"] },
+					{ role: "副部长", names: ["商浩良"] },
+					{ role: "顾问", names: ["张卓", "顾健"] },
+				],
+			},
+		],
 	},
 	logoCollection: {
 		title: "我们的合作伙伴",
