@@ -11,8 +11,7 @@ export default function AboutUs() {
 		<Container
 			id="about"
 			sx={{
-				pt: { xs: 4, sm: 12 },
-				pb: { xs: 4, sm: 12 },
+				py: { xs: 6, sm: 10 },
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",

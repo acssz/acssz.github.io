@@ -12,8 +12,7 @@ export default function Manual() {
 		<Container
 			id="Manual"
 			sx={{
-				pt: { xs: 4, sm: 12 },
-				pb: { xs: 0, sm: 0 },
+				py: { xs: 6, sm: 10 },
 				position: "relative",
 				display: "flex",
 				flexDirection: "column",

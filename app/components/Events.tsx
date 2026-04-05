@@ -15,8 +15,7 @@ export default function Events() {
 		<Container
 			id="events"
 			sx={{
-				pt: { xs: 1, sm: 4 },
-				pb: { xs: 0, sm: 0 },
+				py: { xs: 6, sm: 10 },
 				position: "relative",
 				display: "flex",
 				flexDirection: "column",

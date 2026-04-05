@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
 import { useLocale } from "../context/LocaleContext.tsx";
 
 const logos = [
@@ -12,34 +12,56 @@ const logos = [
 	"partners/6.jpg",
 ];
 
-const logoStyle = {
-	maxWidth: "100%",
-	height: "40px",
-	margin: "0 32px",
-	opacity: 0.7,
-	overflow: "hidden",
-};
-
 export default function LogoCollection() {
 	const { locale } = useLocale();
 
 	return (
-		<Box id="logoCollection" sx={{ pt: { xs: 2, sm: 6 }, pb: { xs: 0, sm: 0 }, background: "white" }}>
+		<Box
+			id="logoCollection"
+			sx={{ py: { xs: 6, sm: 10 } }}
+		>
 			<Typography
 				component="h2"
 				variant="h4"
 				align="center"
-				sx={{ color: "text.secondary", pb: { xs: 1, sm: 4 } }}
+				sx={{ color: "text.primary", mb: { xs: 4, sm: 6 } }}
 			>
 				{locale.logoCollection.title}
 			</Typography>
-			<Grid container sx={{ justifyContent: "center", mt: 0.5, opacity: 0.6 }}>
+			<Stack
+				direction="row"
+				flexWrap="wrap"
+				justifyContent="center"
+				gap={3}
+				sx={{ px: { xs: 2, sm: 6 } }}
+			>
 				{logos.map((logo, index) => (
-					<Grid key={index}>
-						<img src={logo} alt="partner" style={logoStyle} />
-					</Grid>
+					<Box
+						key={index}
+						sx={[
+							{
+								bgcolor: "white",
+								borderRadius: 2,
+								px: 3,
+								py: 2,
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "center",
+								boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+							},
+							(theme) => theme.applyStyles("dark", {
+								boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
+							}),
+						]}
+					>
+						<img
+							src={logo}
+							alt="partner"
+							style={{ height: "40px", maxWidth: "120px", objectFit: "contain" }}
+						/>
+					</Box>
 				))}
-			</Grid>
+			</Stack>
 		</Box>
 	);
 }

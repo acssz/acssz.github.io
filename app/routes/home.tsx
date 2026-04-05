@@ -10,6 +10,7 @@ import Events from "../components/Events";
 import FAQ from "../components/FAQ";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
+import Copyright from "../components/Copyright";
 import { LocaleProvider } from "../context/LocaleContext.tsx";
 import "../css/base.css";
 import "../css/embla.css";
@@ -36,6 +37,9 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 					<section id="events">
 						<Events />
 					</section>
+					<section id="sponsors">
+						<LogoCollection />
+					</section>
 					<section id="departments">
 						<Departments />
 					</section>
@@ -48,13 +52,12 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 					<section id="about">
 						<AboutUs />
 					</section>
-					<section id="sponsors">
-						<LogoCollection />
-					</section>
 					<Divider />
 					<footer id="footer">
 						<Footer />
 					</footer>
+					<Divider />
+					<Copyright />
 				</div>
 			</AppTheme>
 		</LocaleProvider>

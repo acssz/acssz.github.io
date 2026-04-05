@@ -25,7 +25,7 @@ export default function Footer() {
 				alignSelf: "center",
 			}}
 		>
-			<Typography component="h2" variant="h4">
+			<Typography component="h2" variant="h4" sx={{ color: "text.primary" }}>
 				{locale.footer.title}
 			</Typography>
 			<Grid container spacing={2} direction={"column"} sx={{ alignSelf: "center" }}>

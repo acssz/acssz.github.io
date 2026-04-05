@@ -22,8 +22,7 @@ export default function FAQ() {
 		<Container
 			id="faq"
 			sx={{
-				pt: { xs: 4, sm: 12 },
-				pb: { xs: 2, sm: 6 },
+				py: { xs: 6, sm: 10 },
 				position: "relative",
 				display: "flex",
 				flexDirection: "column",

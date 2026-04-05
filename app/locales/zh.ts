@@ -12,7 +12,7 @@ export const zh: Locale = {
 		membershipCard: "电子学联卡",
 		departments: "部门架构",
 		aboutUs: "关于我们",
-		adminLogin: "管理员登录",
+		adminLogin: "执委门户",
 		qAndA: "新生问答",
 		eventReview: "活动回顾",
 	},

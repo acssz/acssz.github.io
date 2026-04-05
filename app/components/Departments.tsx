@@ -28,12 +28,7 @@ export default function Departments() {
 	return (
 		<Box
 			id="highlights"
-			sx={{
-				pt: { xs: 4, sm: 12 },
-				pb: { xs: 0, sm: 0 },
-				color: "white",
-				bgcolor: "grey.900",
-			}}
+			sx={{ py: { xs: 6, sm: 10 } }}
 		>
 			<Container
 				sx={{
@@ -50,10 +45,18 @@ export default function Departments() {
 						textAlign: { sm: "left", md: "center" },
 					}}
 				>
-					<Typography component="h2" variant="h4" gutterBottom>
+					<Typography
+						component="h2"
+						variant="h4"
+						gutterBottom
+						sx={{ color: "text.primary" }}
+					>
 						{title}
 					</Typography>
-					<Typography variant="body1" sx={{ color: "grey.400" }}>
+					<Typography
+						variant="body1"
+						sx={{ color: "text.secondary" }}
+					>
 						{description}
 					</Typography>
 				</Box>
@@ -66,11 +69,11 @@ export default function Departments() {
 								spacing={1}
 								useFlexGap
 								sx={{
-									color: "inherit",
 									p: 3,
 									height: "100%",
-									borderColor: "hsla(220, 25%, 25%, 0.3)",
-									backgroundColor: "grey.800",
+									borderColor: "divider",
+									backgroundColor: "background.paper",
+									color: "text.primary",
 								}}
 							>
 								<Box sx={{ opacity: "50%" }}>{ICONS[index]}</Box>
@@ -78,7 +81,10 @@ export default function Departments() {
 									<Typography gutterBottom sx={{ fontWeight: "medium" }}>
 										{item.title}
 									</Typography>
-									<Typography variant="body2" sx={{ color: "grey.400" }}>
+									<Typography
+										variant="body2"
+										sx={{ color: "text.secondary" }}
+									>
 										{item.description}
 									</Typography>
 								</div>

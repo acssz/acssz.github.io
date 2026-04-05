@@ -11,6 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import TranslateIcon from "@mui/icons-material/Translate";
 import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.tsx";
 import Icon from "./Icon.tsx";
 import ExternalLinkButton from "./ExternalLinkButton.tsx";
@@ -87,12 +88,12 @@ export default function AppAppBar() {
 						</Box>
 					</Box>
 					<Box sx={{ display: { xs: "none", md: "flex" }, gap: 1, alignItems: "center" }}>
-						<Button onClick={toggleLanguage} color="info" variant="text" size="small">
-							{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
-						</Button>
 						<ExternalLinkButton href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
 							{nav.adminLogin}
 						</ExternalLinkButton>
+						<IconButton onClick={toggleLanguage} disableRipple size="small" aria-label="Toggle language">
+							<TranslateIcon fontSize="small" />
+						</IconButton>
 						<ColorModeIconDropdown />
 					</Box>
 					<Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
