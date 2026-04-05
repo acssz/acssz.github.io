@@ -1,18 +1,17 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import Grid from "@mui/material/Grid";
 import { useColorScheme } from "@mui/material/styles";
+import { useLocale } from "../context/LocaleContext.tsx";
 
 export default function Footer() {
-	const { mode, systemMode, setMode } = useColorScheme();
+	const { mode, systemMode } = useColorScheme();
 	const darkMode = ((systemMode || mode) as "light" | "dark") === "dark";
+	const { locale } = useLocale();
 
 	return (
 		<Container
@@ -27,7 +26,7 @@ export default function Footer() {
 			}}
 		>
 			<Typography component="h2" variant="h4">
-				Contact Us
+				{locale.footer.title}
 			</Typography>
 			<Grid container spacing={2} direction={"column"} sx={{ alignSelf: "center" }}>
 				<img src="media/QRcode.jpg" style={{ width: "50%", alignSelf: "center" }}></img>
@@ -78,7 +77,7 @@ export default function Footer() {
 					>
 						<img
 							src={darkMode ? "icons/xiaohongshu-w.png" : "icons/xiaohongshu.png"}
-							alt="WeiBo"
+							alt="XiaoHongShu"
 							style={{ width: "120%", height: "120%" }}
 						/>
 					</IconButton>

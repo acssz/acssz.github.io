@@ -1,4 +1,3 @@
-import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import AppTheme from "../shared-theme/AppTheme.tsx";
@@ -10,6 +9,7 @@ import Manual from "../components/Manual";
 import Events from "../components/Events";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import { LocaleProvider } from "../context/LocaleContext.tsx";
 import "../css/base.css";
 import "../css/embla.css";
 
@@ -26,31 +26,33 @@ export function meta() {
 
 export default function Home(props: { disableCustomTheme?: boolean } = { disableCustomTheme: true }) {
 	return (
-		<AppTheme {...props}>
-			<CssBaseline enableColorScheme />
-			<AppAppBar />
-			<Hero />
-			<div>
-				<section id="events">
-					<Events />
-				</section>
-				<section id="departments">
-					<Departments />
-				</section>
-				<section id="information">
-					<Manual />
-				</section>
-				<section id="faq">
-					<FAQ />
-				</section>
-				<section id="sponsors">
-					<LogoCollection />
-				</section>
-				<Divider />
-				<footer id="footer">
-					<Footer />
-				</footer>
-			</div>
-		</AppTheme>
+		<LocaleProvider>
+			<AppTheme {...props}>
+				<CssBaseline enableColorScheme />
+				<AppAppBar />
+				<Hero />
+				<div>
+					<section id="events">
+						<Events />
+					</section>
+					<section id="departments">
+						<Departments />
+					</section>
+					<section id="information">
+						<Manual />
+					</section>
+					<section id="faq">
+						<FAQ />
+					</section>
+					<section id="sponsors">
+						<LogoCollection />
+					</section>
+					<Divider />
+					<footer id="footer">
+						<Footer />
+					</footer>
+				</div>
+			</AppTheme>
+		</LocaleProvider>
 	);
 }

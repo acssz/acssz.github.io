@@ -14,6 +14,8 @@ import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.tsx";
 import Icon from "./Icon.tsx";
 import { ADMIN_LOGIN_URL } from "../config.ts";
+import { useLocale } from "../context/LocaleContext.tsx";
+import type { LocaleKey } from "../locales/index.ts";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 	display: "flex",
@@ -31,11 +33,20 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 	padding: "8px 12px",
 }));
 
+const LANGUAGE_LABELS: Record<LocaleKey, string> = { en: "EN", zh: "中文" };
+const LANGUAGE_TOGGLE: Record<LocaleKey, LocaleKey> = { en: "zh", zh: "en" };
+
 export default function AppAppBar() {
 	const [open, setOpen] = React.useState(false);
+	const { locale, localeKey, setLocaleKey } = useLocale();
+	const nav = locale.nav;
 
 	const toggleDrawer = (newOpen: boolean) => () => {
 		setOpen(newOpen);
+	};
+
+	const toggleLanguage = () => {
+		setLocaleKey(LANGUAGE_TOGGLE[localeKey]);
 	};
 
 	return (
@@ -55,22 +66,22 @@ export default function AppAppBar() {
 						<Icon />
 						<Box sx={{ display: { xs: "none", md: "flex" } }}>
 							<Button component="a" href="#information" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
-								Useful Information
+								{nav.usefulInfo}
 							</Button>
 							<Button component="a" href="#events" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
-								Event Notification
+								{nav.eventNotification}
 							</Button>
 							<Button component="a" href="#sponsors" variant="text" color="info" size="small" sx={{ textDecoration: "none" }}>
-								Business Cooperation
+								{nav.businessCooperation}
 							</Button>
 							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
-								Membership Card
+								{nav.membershipCard}
 							</Button>
 							<Button component="a" href="#departments" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
-								Departments
+								{nav.departments}
 							</Button>
 							<Button component="a" href="#footer" variant="text" color="info" size="small" sx={{ minWidth: 0, textDecoration: "none" }}>
-								About Us
+								{nav.aboutUs}
 							</Button>
 						</Box>
 					</Box>
@@ -81,8 +92,11 @@ export default function AppAppBar() {
 							alignItems: "center",
 						}}
 					>
+						<Button onClick={toggleLanguage} color="info" variant="text" size="small">
+							{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
+						</Button>
 						<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
-							Admin Login
+							{nav.adminLogin}
 						</Button>
 						<ColorModeIconDropdown />
 					</Box>
@@ -113,17 +127,22 @@ export default function AppAppBar() {
 									</IconButton>
 								</Box>
 
-								<MenuItem component="a" href="#information" sx={{ textDecoration: "none", color: "inherit" }}>Useful Information</MenuItem>
-								<MenuItem>Q&A for Freshmen</MenuItem>
-								<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>Event Notification</MenuItem>
-								<MenuItem>Event Review</MenuItem>
-								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>Business Cooperation</MenuItem>
-								<MenuItem>Membership Card</MenuItem>
-								<MenuItem component="a" href="#footer" sx={{ textDecoration: "none", color: "inherit" }}>About Us</MenuItem>
+								<MenuItem component="a" href="#information" sx={{ textDecoration: "none", color: "inherit" }}>{nav.usefulInfo}</MenuItem>
+								<MenuItem>{nav.qAndA}</MenuItem>
+								<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>{nav.eventNotification}</MenuItem>
+								<MenuItem>{nav.eventReview}</MenuItem>
+								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>{nav.businessCooperation}</MenuItem>
+								<MenuItem>{nav.membershipCard}</MenuItem>
+								<MenuItem component="a" href="#footer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.aboutUs}</MenuItem>
 								<Divider sx={{ my: 3 }} />
 								<MenuItem>
+									<Button onClick={toggleLanguage} color="info" variant="outlined" fullWidth>
+										{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
+									</Button>
+								</MenuItem>
+								<MenuItem>
 									<Button component="a" href={ADMIN_LOGIN_URL} color="primary" variant="contained" fullWidth sx={{ textDecoration: "none" }}>
-										Admin Login
+										{nav.adminLogin}
 									</Button>
 								</MenuItem>
 							</Box>

@@ -1,55 +1,15 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { useColorScheme } from "@mui/material/styles";
-import { SpaceBar } from "@mui/icons-material";
-
-const items = [
-	{
-		name: "Career Insights 2025 - Job hunting and work permit in Switzerland",
-		event: "Are you currently job hunting in Switzerland and facing challenges? What are the key steps to securing a work permit and staying in Switzerland? How can you optimize your resume and prepare effectively for interviews to increase your chances of success?",
-		image: "media/Career_Insights.webp",
-	},
-	{
-		name: "Global Village - Embrace Diversity",
-		event: "🌏✨ Today, we joined AIESEC Zurich at “Global Village - Embrace Diversity” at the University of Zurich, Lichthof! Our team loved sharing a bit of Chinese culture—guests got to try on Hanfu, practice calligraphy, and make bubble tea 🍵✍️💫",
-		image: "media/Global_Village.webp",
-	},
-	{
-		name: "China and Switzerland Culture Talk",
-		event: "At the beginning of 2020, the Switzerland-China Bridge Association and the Zurich Federation of Students jointly held a Sino-Swiss cultural exchange activity. The event featured Swiss musicians Jason Huster, Anton Zemp and his friends.",
-		image: "media/Culture_Talk.jpg",
-	},
-	{
-		name: "You are My Destiny | 520 Making Friends",
-		event: "520, wait for you to make friends, say goodbye to single!",
-		image: "media/Making_Friends.webp",
-	},
-	{
-		name: "More coming soon...",
-		event: "More events are comings soon!",
-		image: "favicon.ico",
-	},
-	{
-		name: "More coming soon...",
-		event: "More events are comings soon!",
-		image: "favicon.ico",
-	},
-];
-
-const logoStyle = {
-	width: "64px",
-	opacity: 0.3,
-};
+import { useLocale } from "../context/LocaleContext.tsx";
 
 export default function Events() {
-	const { mode, systemMode } = useColorScheme();
+	const { locale } = useLocale();
+	const { title, description, items } = locale.events;
 
 	return (
 		<Container
@@ -71,12 +31,10 @@ export default function Events() {
 				}}
 			>
 				<Typography component="h2" variant="h4" gutterBottom sx={{ color: "text.primary" }}>
-					Events
+					{title}
 				</Typography>
 				<Typography variant="body1" sx={{ color: "text.secondary" }}>
-					ACSSZ organizes various events throughout the year to foster community engagement, cultural
-					exchange, and professional development. From career insights to cultural talks, we aim to create a
-					platform for students and scholars to connect and grow.
+					{description}
 				</Typography>
 			</Box>
 			<Grid container spacing={2}>
