@@ -10,7 +10,7 @@ interface LocaleContextValue {
 const LocaleContext = React.createContext<LocaleContextValue | null>(null);
 
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
-  const [localeKey, setLocaleKey] = React.useState<LocaleKey>("en");
+  const [localeKey, setLocaleKey] = React.useState<LocaleKey>("cn");
   const locale = getLocale(localeKey);
 
   return (
