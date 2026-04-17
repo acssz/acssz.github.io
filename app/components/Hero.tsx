@@ -33,11 +33,13 @@ const StyledBox = styled("div")<{ src: string }>(({ theme, src }) => ({
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 const SLIDES = new Map<string, string>([
-	["Slide 1", "media/slider_food.jpeg"],
-	["Slide 2", "media/slider_erhu.jpeg"],
-	["Slide 3", "media/slider_hanfu.jpg"],
-	["Slide 4", "media/slider-china.jpg"],
-	["Slide 5", "media/slider_music.jpg"],
+	["Slide 0", "media/640.jpeg"],
+	["Slide 1", "media/641.png"],
+	["Slide 2", "media/slider_food.jpeg"],
+	["Slide 3", "media/slider_erhu.jpeg"],
+	["Slide 4", "media/slider_hanfu.jpg"],
+	["Slide 5", "media/slider-china.jpg"],
+	["Slide 6", "media/slider_music.jpg"],
 ]);
 
 function HeroImages() {
