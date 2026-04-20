@@ -9,11 +9,6 @@ export interface EventItem {
   image: string;
 }
 
-export interface FaqItem {
-  question: string;
-  answer: string;
-}
-
 export interface TeamRole {
   role: string;
   names: string[];
@@ -37,7 +32,6 @@ export interface Locale {
     departments: string;
     aboutUs: string;
     adminLogin: string;
-    qAndA: string;
     eventReview: string;
   };
   hero: {
@@ -56,10 +50,6 @@ export interface Locale {
   manual: {
     title: string;
     subtitle: string;
-  };
-  faq: {
-    title: string;
-    items: FaqItem[];
   };
   about: {
     title: string;
