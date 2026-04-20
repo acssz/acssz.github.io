@@ -11,8 +11,9 @@ import { useLocale } from "../context/LocaleContext.tsx";
 import { sectionContainerSx, sectionTitleSx, sectionBodySx } from "../styles/section.ts";
 
 export default function AboutUs() {
-	const { locale } = useLocale();
+	const { locale, localeKey } = useLocale();
 	const { title, paragraphs, team } = locale.about;
+	const nameSeparator = localeKey === "zh" ? "、" : ", ";
 
 	return (
 		<Container id="about" sx={sectionContainerSx}>
@@ -58,7 +59,7 @@ export default function AboutUs() {
 											{member.role}
 										</TableCell>
 										<TableCell sx={{ color: "text.primary", ...dividerSx }}>
-											{member.names.join("　")}
+											{member.names.join(nameSeparator)}
 										</TableCell>
 									</TableRow>
 								);

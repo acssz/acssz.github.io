@@ -129,7 +129,7 @@ eventReview: "Event Review",
 				name: "Secretariat",
 				members: [
 					{ role: "Director", names: ["GAO Xing"] },
-					{ role: "Deputy Director", names: ["(Vacant)"] },
+					{ role: "Deputy Director", names: [] },
 				],
 			},
 			{
@@ -145,7 +145,7 @@ eventReview: "Event Review",
 				members: [
 					{ role: "Director", names: ["ZHANG Dingyuan"] },
 					{ role: "Deputy Director", names: ["CHEN Yuyang"] },
-					{ role: "Advisor", names: ["LIXU wenjia"] },
+					{ role: "Advisor", names: ["LI Xu Wenjia"] },
 				],
 			},
 			{
