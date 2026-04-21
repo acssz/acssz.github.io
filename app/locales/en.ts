@@ -14,8 +14,7 @@ export const en: Locale = {
 		departments: "Departments",
 		aboutUs: "About Us",
 		adminLogin: "Admin Login",
-		qAndA: "Q&A for Freshmen",
-		eventReview: "Event Review",
+eventReview: "Event Review",
 	},
 	hero: {
 		slides: new Map<string, string>([
@@ -68,19 +67,9 @@ export const en: Locale = {
 		description: "You are welcome to join ACSSZ!",
 		items: [
 			{
-				title: "Culture & Sports Department",
+				title: "Secretariat",
 				description:
-					"Responsible for organizing and managing activities related to culture, sports, and entertainment, including: planning cultural events such as performances, cultural festivals, and art exhibitions; organizing sports competitions, athletic meets, and fitness activities; planning social gatherings, parties, and games; and coordinating with various cultural and sports organizations to enable resource sharing and collaboration.",
-			},
-			{
-				title: "IT Department",
-				description:
-					"Maintains, upgrades, and provides technical support for the ACSSZ membership card mini-program, forum, website, freshmen handbook, and cloud storage, as well as support for new projects. This includes promoting digital archiving, responding to daily technical needs, managing permissions, exploring new tools, maintaining a requirements list, and hosting tech sharing sessions.",
-			},
-			{
-				title: "Enterprise Department",
-				description:
-					"Bridges students and companies to provide more career opportunities and practical experience, while supporting companies with campus branding and recruitment. Key responsibilities include organizing on- and off-campus corporate collaboration projects, negotiating partnerships with Chinese enterprises (e.g. Bank of China, Huawei, Xiaomi, Ctrip) and Chinese-owned businesses, organizing company presentations and job fairs, and building lasting corporate relationships to offer internships and employment channels.",
+					"Supports the presidium and all other departments in their work, maintaining organized file and email systems and handling meeting administration. This includes coordinating meetings and writing minutes, managing and archiving files on the ACSSZ cloud drive, handling membership management and certificate issuance, writing and maintaining the Zurich Freshmen Handbook, connecting domain experts with students for experience-sharing sessions, and hosting online Q&A and life orientation sessions for new students.",
 			},
 			{
 				title: "Public Relations Department",
@@ -88,41 +77,30 @@ export const en: Locale = {
 					"Represents ACSSZ in building, maintaining, and strengthening external relationships, and assists with various incidents. Key work includes actively assisting in emergencies (e.g. racial discrimination, safety incidents, fraud alerts); building corporate relationships to secure student benefits and discounts (partners: Sunrise YOL, Swisscare, JC Insurance Brokers, etc.); and maintaining collaboration with Zurich city government, ETH/UZH student unions, alumni associations, the Swiss-Chinese Association, other student organizations, and various clubs.",
 			},
 			{
+				title: "Enterprise Department",
+				description:
+					"Bridges students and companies to provide more career opportunities and practical experience, while supporting companies with campus branding and recruitment. Key responsibilities include organizing on- and off-campus corporate collaboration projects, negotiating partnerships with Chinese enterprises (e.g. Bank of China, Huawei, Xiaomi, Ctrip) and Chinese-owned businesses, organizing company presentations and job fairs, and building lasting corporate relationships to offer internships and employment channels.",
+			},
+			{
+				title: "Culture & Sports Department",
+				description:
+					"Responsible for organizing and managing activities related to culture, sports, and entertainment, including: planning cultural events such as performances, cultural festivals, and art exhibitions; organizing sports competitions, athletic meets, and fitness activities; planning social gatherings, parties, and games; and coordinating with various cultural and sports organizations to enable resource sharing and collaboration.",
+			},
+			{
 				title: "Publicity Department",
 				description:
 					"The public-facing window of ACSSZ. From copywriting to graphic design, from WeChat promotion to managing accounts across major social platforms — responsible for content writing, illustration, poster design, and video editing: operating the official WeChat account, Xiaohongshu, and Bilibili; promoting events and sharing information; and technical work such as poster design and video editing.",
 			},
 			{
-				title: "Secretariat",
+				title: "IT Department",
 				description:
-					"Supports the presidium and all other departments in their work, maintaining organized file and email systems and handling meeting administration. This includes coordinating meetings and writing minutes, managing and archiving files on the ACSSZ cloud drive, handling membership management and certificate issuance, writing and maintaining the Zurich Freshmen Handbook, connecting domain experts with students for experience-sharing sessions, and hosting online Q&A and life orientation sessions for new students.",
+					"Maintains, upgrades, and provides technical support for the ACSSZ membership card mini-program, forum, website, freshmen handbook, and cloud storage, as well as support for new projects. This includes promoting digital archiving, responding to daily technical needs, managing permissions, exploring new tools, maintaining a requirements list, and hosting tech sharing sessions.",
 			},
 		],
 	},
 	manual: {
 		title: "Useful Information",
 		subtitle: "Handbook for Freshmen (2025 edition)",
-	},
-	faq: {
-		title: "Frequently Asked Questions",
-		items: [
-			{
-				question: "What preparations do we need to make before departure?",
-				answer: "Visa application, Luggage preparation, Domestic bank / card-related matters, Domestic mobile phone and SIM card, Flight tickets...",
-			},
-			{
-				question: "What are the steps for finding accommodation in Zurich?",
-				answer: "Step 1: Search for suitable accommodation through various channels, apply to view the property and submit a rental application according to the process for each channel (see below for details). Step 2: Once the landlord/agent has accepted your application, sign a rental contract with the landlord/agent. If the landlord does not accept your application, return to step 1. Step 3: Complete the handover of the property and move in.",
-			},
-			{
-				question: "How much does it cost to live in Zurich?",
-				answer: "Generally, monthly expenses range from 1,500 to 2,000 Swiss francs, with no upper limit: Fixed expenses: rent, insurance, telephone bills, transportation costs, etc. If you live in a student dormitory (e.g., Woko, Juwo, WFSS), rent typically ranges from 500 to 800 Swiss Francs, which is relatively affordable. If you rent through a private landlord, prices will be higher. Shared accommodation costs between 600 and 1,200 Swiss Francs per person. Renting an apartment alone in Zurich generally costs over 1,200 Swiss Francs, with better options reaching over 3,000 Swiss Francs. For insurance, you can choose the Swisscare discount exclusive to the ACSSZ, starting at 56 Swiss francs per month (for those aged 31 and under). If you are new to the area and prefer a zero-deductible plan, you can opt for the Academic Care zero-deductible package, though its costs are relatively higher (140 Swiss francs per month for those aged 25 and under, and 250 Swiss francs per month for those aged 26 and above) Phone bills typically range from 20 to 35 Swiss Francs. The ACSSZ offers an exclusive discount through Sunrise LEBARA, which is cheaper than market rates. Transportation costs usually involve purchasing an annual pass for Zone 110. For those under 25, the annual cost is 570 Swiss Francs. Those who frequently travel in the evenings can purchase the Night GA pass for 99 Swiss Francs per year, allowing unlimited travel in GA-covered areas after 7 PM. Other expenses mainly involve grocery shopping. If you cook at home most of the time, approximately 400 CHF per month for supermarket shopping is sufficient. If your time is more valuable, eating at the cafeteria or takeout shops daily averages 30–40 CHF per day. Occasional restaurant visits cost around 30–50 CHF per person. Online purchases of skincare products and clothing can cost between 50 and 200 Swiss Francs, though many students choose to buy everything in one go when they return home annually.",
-			},
-			{
-				question: "How to join ACSSZ?",
-				answer: "If you would like to join us, please follow our announcements at the start of each autumn semester.",
-			},
-		],
 	},
 	about: {
 		title: "About Us",
@@ -151,7 +129,7 @@ export const en: Locale = {
 				name: "Secretariat",
 				members: [
 					{ role: "Director", names: ["GAO Xing"] },
-					{ role: "Deputy Director", names: ["(Vacant)"] },
+					{ role: "Deputy Director", names: [] },
 				],
 			},
 			{
@@ -167,7 +145,7 @@ export const en: Locale = {
 				members: [
 					{ role: "Director", names: ["ZHANG Dingyuan"] },
 					{ role: "Deputy Director", names: ["CHEN Yuyang"] },
-					{ role: "Advisor", names: ["LIXU wenjia"] },
+					{ role: "Advisor", names: ["LI Xu Wenjia"] },
 				],
 			},
 			{

@@ -119,8 +119,7 @@ export default function AppAppBar() {
 								</Box>
 
 								<MenuItem component="a" href="#information" sx={{ textDecoration: "none", color: "inherit" }}>{nav.usefulInfo}</MenuItem>
-								<MenuItem>{nav.qAndA}</MenuItem>
-								<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>{nav.eventNotification}</MenuItem>
+<MenuItem component="a" href="#events" sx={{ textDecoration: "none", color: "inherit" }}>{nav.eventNotification}</MenuItem>
 								<MenuItem>{nav.eventReview}</MenuItem>
 								<MenuItem component="a" href="#sponsors" sx={{ textDecoration: "none", color: "inherit" }}>{nav.businessCooperation}</MenuItem>
 								<MenuItem component="a" href={MEMBERSHIP_CARD_URL} target="_blank" rel="noopener noreferrer" sx={{ textDecoration: "none", color: "inherit" }}>{nav.membershipCard}</MenuItem>

@@ -7,7 +7,6 @@ import LogoCollection from "../components/LogoCollection";
 import Departments from "../components/Departments";
 import Manual from "../components/Manual";
 import Events from "../components/Events";
-import FAQ from "../components/FAQ";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
@@ -46,10 +45,7 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 					<section id="information">
 						<Manual />
 					</section>
-					<section id="faq">
-						<FAQ />
-					</section>
-					<section id="about">
+<section id="about">
 						<AboutUs />
 					</section>
 					<Divider />
