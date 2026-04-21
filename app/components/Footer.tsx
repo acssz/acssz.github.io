@@ -4,7 +4,6 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import EmailIcon from "@mui/icons-material/Email";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { useColorScheme } from "@mui/material/styles";
 import { useLocale } from "../context/LocaleContext.tsx";
@@ -49,26 +48,15 @@ export default function Footer() {
 					<IconButton
 						color="inherit"
 						size="small"
-						href="https://www.facebook.com/groups/174462206028150/"
+						href="https://space.bilibili.com/440148595"
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Facebook"
-						sx={{ alignSelf: "center" }}
-					>
-						<FacebookIcon />
-					</IconButton>
-					<IconButton
-						color="inherit"
-						size="small"
-						href="http://www.weibo.com/p/1005052462691882/home?from=page_100505&mod=TAB&is_hot=1"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="WeiBo"
+						aria-label="Bilibili"
 						sx={{ alignSelf: "center" }}
 					>
 						<img
-							src={darkMode ? "icons/weibo-w.png" : "icons/weibo.png"}
-							alt="WeiBo"
+							src={darkMode ? "icons/bilibili-w.png" : "icons/bilibili.png"}
+							alt="Bilibili"
 							style={{ width: "60%", height: "60%" }}
 						/>
 					</IconButton>
