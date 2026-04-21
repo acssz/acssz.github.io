@@ -67,19 +67,9 @@ eventReview: "Event Review",
 		description: "You are welcome to join ACSSZ!",
 		items: [
 			{
-				title: "Culture & Sports Department",
+				title: "Secretariat",
 				description:
-					"Responsible for organizing and managing activities related to culture, sports, and entertainment, including: planning cultural events such as performances, cultural festivals, and art exhibitions; organizing sports competitions, athletic meets, and fitness activities; planning social gatherings, parties, and games; and coordinating with various cultural and sports organizations to enable resource sharing and collaboration.",
-			},
-			{
-				title: "IT Department",
-				description:
-					"Maintains, upgrades, and provides technical support for the ACSSZ membership card mini-program, forum, website, freshmen handbook, and cloud storage, as well as support for new projects. This includes promoting digital archiving, responding to daily technical needs, managing permissions, exploring new tools, maintaining a requirements list, and hosting tech sharing sessions.",
-			},
-			{
-				title: "Enterprise Department",
-				description:
-					"Bridges students and companies to provide more career opportunities and practical experience, while supporting companies with campus branding and recruitment. Key responsibilities include organizing on- and off-campus corporate collaboration projects, negotiating partnerships with Chinese enterprises (e.g. Bank of China, Huawei, Xiaomi, Ctrip) and Chinese-owned businesses, organizing company presentations and job fairs, and building lasting corporate relationships to offer internships and employment channels.",
+					"Supports the presidium and all other departments in their work, maintaining organized file and email systems and handling meeting administration. This includes coordinating meetings and writing minutes, managing and archiving files on the ACSSZ cloud drive, handling membership management and certificate issuance, writing and maintaining the Zurich Freshmen Handbook, connecting domain experts with students for experience-sharing sessions, and hosting online Q&A and life orientation sessions for new students.",
 			},
 			{
 				title: "Public Relations Department",
@@ -87,14 +77,24 @@ eventReview: "Event Review",
 					"Represents ACSSZ in building, maintaining, and strengthening external relationships, and assists with various incidents. Key work includes actively assisting in emergencies (e.g. racial discrimination, safety incidents, fraud alerts); building corporate relationships to secure student benefits and discounts (partners: Sunrise YOL, Swisscare, JC Insurance Brokers, etc.); and maintaining collaboration with Zurich city government, ETH/UZH student unions, alumni associations, the Swiss-Chinese Association, other student organizations, and various clubs.",
 			},
 			{
+				title: "Enterprise Department",
+				description:
+					"Bridges students and companies to provide more career opportunities and practical experience, while supporting companies with campus branding and recruitment. Key responsibilities include organizing on- and off-campus corporate collaboration projects, negotiating partnerships with Chinese enterprises (e.g. Bank of China, Huawei, Xiaomi, Ctrip) and Chinese-owned businesses, organizing company presentations and job fairs, and building lasting corporate relationships to offer internships and employment channels.",
+			},
+			{
+				title: "Culture & Sports Department",
+				description:
+					"Responsible for organizing and managing activities related to culture, sports, and entertainment, including: planning cultural events such as performances, cultural festivals, and art exhibitions; organizing sports competitions, athletic meets, and fitness activities; planning social gatherings, parties, and games; and coordinating with various cultural and sports organizations to enable resource sharing and collaboration.",
+			},
+			{
 				title: "Publicity Department",
 				description:
 					"The public-facing window of ACSSZ. From copywriting to graphic design, from WeChat promotion to managing accounts across major social platforms — responsible for content writing, illustration, poster design, and video editing: operating the official WeChat account, Xiaohongshu, and Bilibili; promoting events and sharing information; and technical work such as poster design and video editing.",
 			},
 			{
-				title: "Secretariat",
+				title: "IT Department",
 				description:
-					"Supports the presidium and all other departments in their work, maintaining organized file and email systems and handling meeting administration. This includes coordinating meetings and writing minutes, managing and archiving files on the ACSSZ cloud drive, handling membership management and certificate issuance, writing and maintaining the Zurich Freshmen Handbook, connecting domain experts with students for experience-sharing sessions, and hosting online Q&A and life orientation sessions for new students.",
+					"Maintains, upgrades, and provides technical support for the ACSSZ membership card mini-program, forum, website, freshmen handbook, and cloud storage, as well as support for new projects. This includes promoting digital archiving, responding to daily technical needs, managing permissions, exploring new tools, maintaining a requirements list, and hosting tech sharing sessions.",
 			},
 		],
 	},

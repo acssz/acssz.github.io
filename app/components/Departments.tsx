@@ -14,12 +14,12 @@ import { useLocale } from "../context/LocaleContext.tsx";
 import { sectionContainerSx, sectionHeaderBoxSx, sectionTitleSx, sectionBodySx } from "../styles/section.ts";
 
 const ICONS = [
-	<SportsBasketballIcon />,
-	<ConstructionRoundedIcon />,
-	<WorkIcon />,
-	<SupportAgentRoundedIcon />,
-	<AutoFixHighRoundedIcon />,
 	<QueryStatsRoundedIcon />,
+	<SupportAgentRoundedIcon />,
+	<WorkIcon />,
+	<SportsBasketballIcon />,
+	<AutoFixHighRoundedIcon />,
+	<ConstructionRoundedIcon />,
 ];
 
 export default function Departments() {
