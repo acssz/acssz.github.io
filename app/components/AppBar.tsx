@@ -13,6 +13,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import TranslateIcon from "@mui/icons-material/Translate";
 import ColorModeIconDropdown from "../shared-theme/ColorModeIconDropdown.tsx";
+import LocaleIconDropdown from "../shared-theme/LocaleIconDropdown.tsx";
 import Icon from "./Icon.tsx";
 import ExternalLinkButton from "./ExternalLinkButton.tsx";
 import { ADMIN_LOGIN_URL, MEMBERSHIP_CARD_URL } from "../config.ts";
@@ -35,8 +36,8 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 	padding: "8px 12px",
 }));
 
-const LANGUAGE_LABELS: Record<LocaleKey, string> = { en: "EN", zh: "中文" };
-const LANGUAGE_TOGGLE: Record<LocaleKey, LocaleKey> = { en: "zh", zh: "en" };
+const LANGUAGE_LABELS: Record<LocaleKey, string> = { en: "EN", zh: "中文", de: "DE" };
+const LANGUAGE_TOGGLE: Record<LocaleKey, LocaleKey> = { en: "zh", zh: "en", de: "de" };
 
 export default function AppAppBar() {
 	const [open, setOpen] = React.useState(false);
@@ -91,9 +92,7 @@ export default function AppAppBar() {
 						<ExternalLinkButton href={ADMIN_LOGIN_URL} color="primary" variant="text" size="small">
 							{nav.adminLogin}
 						</ExternalLinkButton>
-						<IconButton onClick={toggleLanguage} disableRipple size="small" aria-label="Toggle language">
-							<TranslateIcon fontSize="small" />
-						</IconButton>
+						<LocaleIconDropdown />
 						<ColorModeIconDropdown />
 					</Box>
 					<Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
