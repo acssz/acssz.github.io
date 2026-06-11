@@ -125,9 +125,7 @@ export default function AppAppBar() {
 								<MenuItem component="a" href="#about" sx={{ textDecoration: "none", color: "inherit" }}>{nav.aboutUs}</MenuItem>
 								<Divider sx={{ my: 3 }} />
 								<MenuItem>
-									<Button onClick={toggleLanguage} color="info" variant="outlined" fullWidth>
-										{LANGUAGE_LABELS[LANGUAGE_TOGGLE[localeKey]]}
-									</Button>
+									<LocaleIconDropdown />
 								</MenuItem>
 								<MenuItem>
 									<ExternalLinkButton href={ADMIN_LOGIN_URL} color="primary" variant="contained" fullWidth>
