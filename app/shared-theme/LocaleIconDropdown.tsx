@@ -61,6 +61,9 @@ export default function LocaleIconDropdown(props: IconButtonOwnProps) {
                 <MenuItem selected={localeKey === "de"} onClick={handleLocale("de")}>
                     Deutsch
                 </MenuItem>
+                <MenuItem selected={localeKey === "fr"} onClick={handleLocale("fr")}>
+                    Français
+                </MenuItem>
             </Menu>
         </React.Fragment>
     );
