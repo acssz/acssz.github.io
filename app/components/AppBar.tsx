@@ -36,8 +36,8 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 	padding: "8px 12px",
 }));
 
-const LANGUAGE_LABELS: Record<LocaleKey, string> = { en: "EN", zh: "中文", de: "DE" };
-const LANGUAGE_TOGGLE: Record<LocaleKey, LocaleKey> = { en: "zh", zh: "en", de: "de" };
+const LANGUAGE_LABELS: Record<LocaleKey, string> = { en: "EN", zh: "中文", de: "DE", fr: "FR" };
+const LANGUAGE_TOGGLE: Record<LocaleKey, LocaleKey> = { en: "zh", zh: "en", de: "de", fr: "fr" };
 
 export default function AppAppBar() {
 	const [open, setOpen] = React.useState(false);
